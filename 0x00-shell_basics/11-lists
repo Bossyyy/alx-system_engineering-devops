@@ -1,9 +1,3 @@
 #!/bin/bash
-list_files() {
-  ls -la
-  cd ..
-  ls -la
-  cd /boot
-  ls -la
-}
-list_files
+#!/bin/bash
+ls -la; cd ..; ls -la; cd /boot; ls -la
