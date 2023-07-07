@@ -1,6 +1,15 @@
 #include <stdio.h>
+
 int main() {
-    printf("Hello, World!\n");
+    FILE *file = fopen("/iamafile", "w");
+    if (file != NULL) {
+        fprintf(file, "This is the content of iamafile.\n");
+        fclose(file);
+    } else {
+        printf("Failed to open the file.\n");
+        return 1;
+    }
+
     return 0;
 }
 

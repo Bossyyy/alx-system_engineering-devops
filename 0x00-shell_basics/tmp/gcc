@@ -1,6 +1,7 @@
-#include <stdio.h>
+nclude <stdio.h>
+
 int main() {
-    FILE *file = fopen("/tmp/iamafile", "w");
+    FILE *file = fopen("/iamafile", "w");
     if (file != NULL) {
         fprintf(file, "This is the content of iamafile.\n");
         fclose(file);
@@ -11,3 +12,5 @@ int main() {
 
     return 0;
 }
+
+
