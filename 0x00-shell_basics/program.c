@@ -1,10 +1,5 @@
 #include <stdio.h>
-
-void __attribute__((section(".gnu.warning"))) strip_warning() {
-    system("strip iamafile");
-}
-
 int main() {
-    printf("This is a C program.\n");
+    printf("Hello, World!\n");
     return 0;
 }
