@@ -1,2 +1,2 @@
 #!/bin/bash
-stat -c %G hello
+chgrp school hello
